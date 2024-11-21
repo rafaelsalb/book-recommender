@@ -1,18 +1,24 @@
 import numpy as np
 
-def personalized_pagerank(adj_matrix, personalization, alpha=0.85, max_iter=100, tol=1e-6):
-    N = adj_matrix.shape[0]
+def personalized_pagerank(A: np.ndarray, e: np.ndarray, alpha: float = 0.85, max_iter: int = 100, tol: float = 0.001):
+    n = A.shape[0]
 
-    out_degree = adj_matrix.sum(axis=1)
-    transition_matrix = adj_matrix / out_degree[:, None]
-    transition_matrix = np.nan_to_num(transition_matrix)
+    # Matriz grau
+    D = np.sum(A, axis=1) * np.identity(n)
+    D_inv = np.linalg.pinv(D)
 
-    pr = np.ones(N) / N
+    # Matriz de transição
+    P = np.dot(A.T, D_inv)
 
+    # Vetor de personalização
+    e = e / np.sum(e)
+
+    pr = np.ones(n) / n
     for _ in range(max_iter):
-        pr_new = alpha * np.dot(transition_matrix.T, pr) + (1 - alpha) * personalization
-        if np.linalg.norm(pr_new - pr, ord=1) < tol:
+        new_pr = (1.0 - alpha) * np.dot(P, pr) + alpha * e
+        l1_err = np.linalg.norm(new_pr - pr, ord=1)
+        if l1_err < tol:
             break
-        pr = pr_new
+        pr = new_pr
 
-    return pr
+    return pr, l1_err

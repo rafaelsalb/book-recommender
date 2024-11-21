@@ -15,14 +15,24 @@ def load_goodreads_books(percent: int = 10):
     dataset["author"] = dataset["author"].apply(lambda x: x.replace("[", "").replace("]", "").replace("\"", "").split(","))
     return dataset
 
+def unique_in_multivalue(dataset, col):
+    _col = dataset[col]
+    entries = set()
+    for row in _col:
+        values = [x for x in row]
+        for value in values:
+            entries.add(value)
+    entries = sorted(list(entries))
+    return entries
+
 def authors(dataset):
-    return dataset["author"]
+    return unique_in_multivalue(dataset, "author")
 
 def names(dataset):
-    return dataset["name"]
+    return list(sorted(dataset["name"].tolist()))
 
 def genres(dataset):
-    return dataset["genres"]
+    return unique_in_multivalue(dataset, "genres")
 
 def books_by_author(dataset, author):
     return dataset[dataset["author"].apply(lambda x: author in x)]
