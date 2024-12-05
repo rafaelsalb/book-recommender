@@ -15,8 +15,8 @@ def personalized_pagerank(A: np.ndarray, e: np.ndarray, alpha: float = 0.85, max
 
     pr = np.ones(n) / n
     for _ in range(max_iter):
-        new_pr = (1.0 - alpha) * np.dot(P, pr) + alpha * e
-        l1_err = np.linalg.norm(new_pr - pr, ord=1)
+        new_pr = (1.0 - alpha) * np.dot(P, pr) + alpha * e # no PageRank convencional, 'e' seria apenas um vetor uniforme de 1/n
+        l1_err = np.linalg.norm(new_pr - pr, ord=1) # norma L1
         if l1_err < tol:
             break
         pr = new_pr

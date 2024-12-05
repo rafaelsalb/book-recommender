@@ -97,15 +97,13 @@ def full_edge_list_generator(dataset):
     seen_entries = set()
     pool = multiprocessing.Pool(processes=4)
 
-    # Prepare the arguments for the helper function
     args = [(dataset, col, r) for col in ['author', 'genres'] for r in dataset[col]]
 
-    # Use multiprocessing to process the items
     results = pool.map(process_item, args)
 
-    # Flatten the results and add to seen_entries
     for result in results:
         for entry in result:
+            # evitando entradas duplicadas. poderia ser resolvido melhor, mas por enquanto está bom.
             if entry not in seen_entries:
                 seen_entries.add(entry)
                 yield entry

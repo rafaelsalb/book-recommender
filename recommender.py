@@ -94,12 +94,10 @@ class Recommender:
 
         node_colors = ['turquoise' for _ in range(len(G.nodes()))]
 
-        # Draw the graph
         plt.figure(figsize=(10, 10))
-        pos = nx.spring_layout(G)  # You can adjust the layout algorithm here
+        pos = nx.spring_layout(G)
         nx.draw(G, pos, with_labels=True, labels=labels, node_color=node_colors, font_size=10, node_size=200, font_color='black')
 
-        # Save the graph as an SVG file
         plt.savefig('static/graph.svg', format='svg')
         plt.close()
 
