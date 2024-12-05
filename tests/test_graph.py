@@ -62,3 +62,19 @@ def test_triparted_graph():
         [0., 0., 0., 0., 1., 0., 0., 0., 0.], # C2
         [0., 0., 0., 0., 0., 1., 0., 0., 0.], # C3
     ]
+
+def test_neighbors():
+    graph = Graph([('A', 'B'), ('B', 'C'), ('C', 'D'), ('D', 'E'), ('E', 'A')], ['A', 'B', 'C', 'D', 'E'])
+    assert graph.neighbors('A') == [1, 4]
+
+def test_triparted_neighbors():
+    graph = TripartedGraph(
+        [('A1', 'B1'), ('A1', 'B2'), ('A2', 'B2'), ('A2', 'B3'), ('A3', 'B3'), ('B1', 'C1'), ('B2', 'C2'), ('B2', 'C2'), ('B3', 'C3')],
+        ['A1', 'A2', 'A3'], ['B1', 'B2', 'B3'], ['C1', 'C2', 'C3']
+    )
+    neighbors = graph.neighbors('A1')
+
+    assert neighbors == [3, 4]
+    assert graph.group_of(0) == graph.A
+    assert graph.group_of(3) == graph.B
+    assert graph.group_of(6) == graph.C

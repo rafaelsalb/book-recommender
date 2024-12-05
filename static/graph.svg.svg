@@ -1,0 +1,57 @@
+<svg width="635.5150589238365" height="340" xmlns="http://www.w3.org/2000/svg">
+<path stroke-width="1" stroke="gray" d="M 130 20 113 52"/>
+<path stroke-width="1" stroke="gray" d="M 360 213 358 245"/>
+<path stroke-width="1" stroke="gray" d="M 358 245 360 213"/>
+<path stroke-width="1" stroke="gray" d="M 358 245 367 271"/>
+<path stroke-width="1" stroke="gray" d="M 41 279 62 296"/>
+<path stroke-width="1" stroke="gray" d="M 41 279 37 302"/>
+<path stroke-width="1" stroke="gray" d="M 41 279 20 263"/>
+<path stroke-width="1" stroke="gray" d="M 41 279 46 257"/>
+<path stroke-width="1" stroke="gray" d="M 62 296 41 279"/>
+<path stroke-width="1" stroke="gray" d="M 62 296 59 320"/>
+<path stroke-width="1" stroke="gray" d="M 37 302 41 279"/>
+<path stroke-width="1" stroke="gray" d="M 37 302 59 320"/>
+<path stroke-width="1" stroke="gray" d="M 59 320 62 296"/>
+<path stroke-width="1" stroke="gray" d="M 59 320 37 302"/>
+<path stroke-width="1" stroke="gray" d="M 25 239 20 263"/>
+<path stroke-width="1" stroke="gray" d="M 25 239 46 257"/>
+<path stroke-width="1" stroke="gray" d="M 113 52 130 20"/>
+<path stroke-width="1" stroke="gray" d="M 113 52 101 77"/>
+<path stroke-width="1" stroke="gray" d="M 367 271 358 245"/>
+<path stroke-width="1" stroke="gray" d="M 367 271 387 292"/>
+<path stroke-width="1" stroke="gray" d="M 101 77 113 52"/>
+<path stroke-width="1" stroke="gray" d="M 101 77 66 82"/>
+<path stroke-width="1" stroke="gray" d="M 101 77 127 96"/>
+<path stroke-width="1" stroke="gray" d="M 163 119 127 96"/>
+<path stroke-width="1" stroke="gray" d="M 66 82 101 77"/>
+<path stroke-width="1" stroke="gray" d="M 66 82 20 87"/>
+<path stroke-width="1" stroke="gray" d="M 387 292 367 271"/>
+<path stroke-width="1" stroke="gray" d="M 387 292 420 308"/>
+<path stroke-width="1" stroke="gray" d="M 20 263 41 279"/>
+<path stroke-width="1" stroke="gray" d="M 20 263 25 239"/>
+<path stroke-width="1" stroke="gray" d="M 46 257 41 279"/>
+<path stroke-width="1" stroke="gray" d="M 46 257 25 239"/>
+<path stroke-width="1" stroke="gray" d="M 127 96 101 77"/>
+<path stroke-width="1" stroke="gray" d="M 127 96 163 119"/>
+<path stroke-width="1" stroke="gray" d="M 20 87 66 82"/>
+<path stroke-width="1" stroke="gray" d="M 420 308 387 292"/>
+<circle cx="130" cy="20" r="7.0" style="fill:gray;stroke:black;stroke-width:1.0"/>
+<circle cx="360" cy="213" r="7.0" style="fill:gray;stroke:black;stroke-width:1.0"/>
+<circle cx="358" cy="245" r="7.0" style="fill:gray;stroke:black;stroke-width:1.0"/>
+<circle cx="41" cy="279" r="7.0" style="fill:gray;stroke:black;stroke-width:1.0"/>
+<circle cx="62" cy="296" r="7.0" style="fill:gray;stroke:black;stroke-width:1.0"/>
+<circle cx="37" cy="302" r="7.0" style="fill:gray;stroke:black;stroke-width:1.0"/>
+<circle cx="59" cy="320" r="7.0" style="fill:gray;stroke:black;stroke-width:1.0"/>
+<circle cx="25" cy="239" r="7.0" style="fill:gray;stroke:black;stroke-width:1.0"/>
+<circle cx="113" cy="52" r="7.0" style="fill:gray;stroke:black;stroke-width:1.0"/>
+<circle cx="367" cy="271" r="7.0" style="fill:gray;stroke:black;stroke-width:1.0"/>
+<circle cx="101" cy="77" r="7.0" style="fill:gray;stroke:black;stroke-width:1.0"/>
+<circle cx="163" cy="119" r="7.0" style="fill:gray;stroke:black;stroke-width:1.0"/>
+<circle cx="66" cy="82" r="7.0" style="fill:gray;stroke:black;stroke-width:1.0"/>
+<circle cx="387" cy="292" r="7.0" style="fill:gray;stroke:black;stroke-width:1.0"/>
+<circle cx="20" cy="263" r="7.0" style="fill:gray;stroke:black;stroke-width:1.0"/>
+<circle cx="46" cy="257" r="7.0" style="fill:gray;stroke:black;stroke-width:1.0"/>
+<circle cx="127" cy="96" r="7.0" style="fill:gray;stroke:black;stroke-width:1.0"/>
+<circle cx="20" cy="87" r="7.0" style="fill:gray;stroke:black;stroke-width:1.0"/>
+<circle cx="420" cy="308" r="7.0" style="fill:gray;stroke:black;stroke-width:1.0"/>
+<text text-anchor="start" x="140" y="20" font-size="12">Aristotle</text><text text-anchor="start" x="370" y="213" font-size="12">Cal Newport</text><text text-anchor="start" x="368" y="245" font-size="12">Deep Work</text><text text-anchor="start" x="51" y="279" font-size="12">Fantasy</text><text text-anchor="start" x="72" y="296" font-size="12">Harry Potter and the Chamber of Secrets</text><text text-anchor="start" x="47" y="302" font-size="12">Harry Potter and the Philosopher's Stone</text><text text-anchor="start" x="69" y="320" font-size="12">J.K. Rowling</text><text text-anchor="start" x="35" y="239" font-size="12">J.R.R. Tolkien</text><text text-anchor="start" x="123" y="52" font-size="12">Nicomachean Ethics</text><text text-anchor="start" x="377" y="271" font-size="12">Nonfiction</text><text text-anchor="start" x="111" y="77" font-size="12">Philosophy</text><text text-anchor="start" x="173" y="119" font-size="12">Socrates</text><text text-anchor="start" x="76" y="82" font-size="12">Summa Theologica</text><text text-anchor="start" x="397" y="292" font-size="12">The 4-Hour Workweek</text><text text-anchor="start" x="30" y="263" font-size="12">The Hobbit</text><text text-anchor="start" x="56" y="257" font-size="12">The Lord of the Rings</text><text text-anchor="start" x="137" y="96" font-size="12">The Republic</text><text text-anchor="start" x="30" y="87" font-size="12">Thomas Aquinas</text><text text-anchor="start" x="430" y="308" font-size="12">Tim Ferriss</text></svg>

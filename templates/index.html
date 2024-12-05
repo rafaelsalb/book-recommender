@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendador de Livros</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .container {
+            display: flex;
+            height: calc(100vh - 60px); /* Adjust based on the height of the header */
+        }
+        .left-column {
+            width: 50%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            overflow: auto;
+        }
+        .right-column {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            overflow: auto;
+        }
+        .right-column .row {
+            flex: 1;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            margin: 10px 0;
+            overflow: auto;
+        }
+        .scroll-container {
+            overflow: auto;
+            max-width: 100%;
+            max-height: 100%;
+        }
+        ol, ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Recomendador de Livros</h1>
+
+    <div class="container">
+        <div class="left-column">
+            <h2>Visualização do Grafo</h2>
+            <div class="scroll-container">
+                <img src="static/graph.svg" alt="Grafo de Livros">
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="row">
+                <h2>Sugestões de Leitura</h2>
+
+                <ol>
+                    {% for book in books %}
+                    <form action="/like/{{ book.index }}" method="POST">
+                        <li><input type="submit" value="👍"> {{ book.book }}, {% for author in book.authors %} {{ author }} {% endfor %} - ({% for genre in book.genres %} {{genre}} {% endfor %})</li>
+                    </form>
+                    {% endfor %}
+                </ol>
+            </div>
+
+            <div class="row">
+                <h2>Seus Livros</h2>
+                <ul>
+                    {% for book in user_books %}
+                    <form action="/dislike/{{ book.index }}" method="POST">
+                        <li><input type="submit" value="👎"> {{ book.book }}, {% for author in book.authors %} {{ author }} {% endfor %}</li>
+                    </form>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

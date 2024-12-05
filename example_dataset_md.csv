@@ -1,0 +1,27 @@
+;author;name;genres;star_rating
+0;['J.K. Rowling'];Harry Potter and the Philosopher's Stone;['Fantasy', 'Adventure', 'Young Adult'];4.5
+1;['J.R.R. Tolkien'];The Hobbit;['Fantasy', 'Adventure', 'Classic'];4.6
+2;['J.R.R. Tolkien'];The Lord of the Rings;['Fantasy', 'Adventure', 'Epic'];4.7
+3;['J.K. Rowling'];Harry Potter and the Chamber of Secrets;['Fantasy', 'Adventure', 'Young Adult'];4.4
+4;['Aristotle'];Nicomachean Ethics;['Philosophy', 'Ethics', 'Classic'];4.8
+5;['Socrates'];The Republic;['Philosophy', 'Politics', 'Classic'];4.9
+6;['Thomas Aquinas'];Summa Theologica;['Philosophy', 'Theology', 'Classic'];4.7
+7;['Cal Newport'];Deep Work;['Nonfiction', 'Productivity', 'Self-help'];4.3
+8;['Tim Ferriss'];The 4-Hour Workweek;['Nonfiction', 'Productivity', 'Business'];4.2
+9;['George Orwell'];1984;['Dystopian', 'Political Fiction', 'Classic'];4.7
+10;['Aldous Huxley'];Brave New World;['Dystopian', 'Science Fiction', 'Classic'];4.6
+11;['F. Scott Fitzgerald'];The Great Gatsby;['Classics', 'Drama', 'American Literature'];4.4
+12;['Harper Lee'];To Kill a Mockingbird;['Classics', 'Drama', 'Historical Fiction'];4.8
+13;['Marcus Aurelius'];Meditations;['Philosophy', 'Stoicism', 'Classic'];4.9
+14;['Stephen R. Covey'];The 7 Habits of Highly Effective People;['Self-help', 'Productivity', 'Leadership'];4.5
+15;['Dale Carnegie'];How to Win Friends and Influence People;['Self-help', 'Communication', 'Leadership'];4.6
+16;['Isaac Asimov'];Foundation;['Science Fiction', 'Epic', 'Classic'];4.7
+17;['Frank Herbert'];Dune;['Science Fiction', 'Adventure', 'Classic'];4.8
+18;['Ray Bradbury'];Fahrenheit 451;['Dystopian', 'Science Fiction', 'Classic'];4.5
+19;['Yuval Noah Harari'];Sapiens: A Brief History of Humankind;['Nonfiction', 'History', 'Anthropology'];4.7
+20;['Malcolm Gladwell'];Outliers;['Nonfiction', 'Psychology', 'Sociology'];4.4
+21;['Sun Tzu'];The Art of War;['Philosophy', 'Strategy', 'Military'];4.6
+22;['Niccolò Machiavelli'];The Prince;['Philosophy', 'Politics', 'Leadership'];4.5
+23;['J.D. Salinger'];The Catcher in the Rye;['Classics', 'Coming of Age', 'American Literature'];4.2
+24;['Mary Shelley'];Frankenstein;['Classics', 'Horror', 'Science Fiction'];4.3
+25;['Herman Melville'];Moby-Dick;['Classics', 'Adventure', 'American Literature'];4.1
